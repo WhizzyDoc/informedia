@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Informedia-Education</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+        <link rel="stylesheet" href="../src/style.css">
+        <link rel="stylesheet" href="../src/media.css">
+    </head>
+
+    <body>
+        <div class="subscribe-newsletters">
+            <div class="s-exp">
+                <div class="cancel" onclick="closeSub()">&times; Cancel</div>
+                <div style="text-align:center;font-size:25px;font-weight:600;">Subscribe for free Newsletters</div>
+                <form action="">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" autofocus />
+                    <input type="checkbox" name="remember" id="remember">
+                    <label for="remember">Remember Me</label><br>
+                    <input type="checkbox" name="agree" id="agree">
+                    <label for="agree">I Agree to your Rules & Policies</label><br>
+                    <button>Join List</button>    
+                </form>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <header class="header">
+                <div><i class="fa fa-desktop"></i> Informedia</div>
+            </header>
+
+            <section class="content-container">
+
+                <section class="navigation">
+                    <div class="menu" onclick="closenav()" style="position:absolute;top:5px;right:5px;font-size:40px;font-weight:600;color:red;cursor:pointer;">&times;</div>
+                    <h3><i class="fa fa-home"></i> Home</h3>
+                    <nav>
+                        <ul>
+                            <li><a href="../index.html"><i class="fa fa-home"></i> Home Page</a></li>
+                            <li><a href="#"><i class="fa fa-user"></i> My Profile</a></li>
+                        </ul>
+                    </nav>
+                    <h3>News Category</h3>
+                    <nav>
+                        <ul>
+                            <li class="active"><a href="education.html">Education</a></li>
+                            <li><a href="politics.html">Politics</a></li>
+                            <li><a href="entertainment.html">Entertainment</a></li>
+                            <li><a href="technology.html">Technology</a></li>
+                            <li><a href="religion.html">Religion</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="science.html">Science & Research</a></li>
+                            <li><a href="sport.html">Sports</a></li>
+                        </ul>
+                    </nav>
+
+                    <section class="settings hide">
+
+                        <h3>Your Settings <span>&equiv;</span></h3>
+                        <nav>
+                            <ul>
+                                <li><a href="#">Education</a></li>
+                            </ul>
+                        </nav>
+    
+                    </section>
+
+                </section>
+                    
+                <section class="news">
+
+                    <header>
+                        <div class="little-nav">
+                            <ul>
+                                <li class="menu"><a class="menu" onclick="opennav()"><i class="fa fa-list"></i></a></li>
+                                <li id="all" class="active"><a onclick="showAll()">All</a></li>
+                                <li id="local"><a onclick="showLocal()">Local</a></li>
+                                <li id="inter"><a onclick="showInter()">International</a> </li>
+                                <li id="trend"><a onclick="showTrend()">Trending</a></li>
+                            </ul>
+                        </div>
+                    </header>
+
+                    <section class="articles">
+
+                        <figure class="local all">
+
+                            <img src="../image/image1.jpg" alt="cover">
+                            <span class="views"><i class="fa fa-eye"></i> 29.6k views</span>
+                            <figcaption>
+                                <a href="#">17 Medicine Students & Surgery Students graduate with 
+                                    first Class from the university of Jos
+                                </a>
+                                <article>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                    Delectus aut pariatur aspernatur eaque exercitationem quae labore...
+                                </article>
+                                <span class="view"><i class="fa fa-eye"></i> 29.6k views</span>
+                            </figcaption>
+
+                        </figure>
+
+
+                        <figure class="local all">
+
+                            <img src="../image/image1.jpg" alt="cover">
+                            <span class="views"><i class="fa fa-eye"></i> 29.6k views</span>
+                            <figcaption>
+                                <a href="#">17 Medicine Students & Surgery Students graduate with 
+                                    first Class from the university of Jos
+                                </a>
+                                <article>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                    Delectus aut pariatur aspernatur eaque exercitationem quae labore...
+                                </article>
+                                <span class="view"><i class="fa fa-eye"></i> 29.6k views</span>
+                            </figcaption>
+
+                        </figure>
+
+
+                        <figure class="local all">
+
+                            <img src="../image/image1.jpg" alt="cover">
+                            <span class="views"><i class="fa fa-eye"></i> 29.6k views</span>
+                            <figcaption>
+                                <a href="#">17 Medicine Students & Surgery Students graduate with 
+                                    first Class from the university of Jos
+                                </a>
+                                <article>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                    Delectus aut pariatur aspernatur eaque exercitationem quae labore...
+                                </article>
+                                <span class="view"><i class="fa fa-eye"></i> 29.6k views</span>
+                            </figcaption>
+
+                        </figure>
+
+
+                        <figure class="inter all">
+
+                            <img src="../image/image1.jpg" alt="cover">
+                            <span class="views"><i class="fa fa-eye"></i> 29.6k views</span>
+                            <figcaption>
+                                <a href="#">17 Medicine Students & Surgery Students graduate with 
+                                    first Class from the university of Jos
+                                </a>
+                                <article>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                    Delectus aut pariatur aspernatur eaque exercitationem quae labore...
+                                </article>
+                                <span class="view"><i class="fa fa-eye"></i> 29.6k views</span>
+                            </figcaption>
+
+                        </figure>
+
+
+                        <figure class="inter trend all">
+
+                            <img src="../image/image1.jpg" alt="cover">
+                            <span class="views"><i class="fa fa-eye"></i> 29.6k views</span>
+                            <figcaption>
+                                <a href="#">17 Medicine Students & Surgery Students graduate with 
+                                    first Class from the university of Jos
+                                </a>
+                                <article>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                    Delectus aut pariatur aspernatur eaque exercitationem quae labore...
+                                </article>
+                                <span class="view"><i class="fa fa-eye"></i> 29.6k views</span>
+                            </figcaption>
+
+                        </figure>
+
+
+                        <figure class="trend all">
+
+                            <img src="../image/image1.jpg" alt="cover">
+                            <span class="views"><i class="fa fa-eye"></i> 29.6k views</span>
+                            <figcaption>
+                                <a href="#">17 Medicine Students & Surgery Students graduate with 
+                                    first Class from the university of Jos
+                                </a>
+                                <article>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                    Delectus aut pariatur aspernatur eaque exercitationem quae labore...
+                                </article>
+                                <span class="view"><i class="fa fa-eye"></i> 29.6k views</span>
+                            </figcaption>
+
+                        </figure>
+
+
+                    </section>
+
+                </section>
+
+
+            </section>
+            
+        </div>
+
+        <div class="subscribe">
+            <button onclick="subscribe()"><i class="fa fa-thumbs-up"></i> Subscribe</button>
+        </div>
+
+        <div class="update">
+            <p class="text-wrap">
+                <span>This is a news update that should be right here at the bottom of the page. There can be be some footer news update that gives a general overview at one glance.</span>&nbsp;&nbsp;&nbsp;
+                <span>ASUU don finally decide to extend strike till next year &#128520;</span>&nbsp;&nbsp;&nbsp;
+                <span>APC & PDP have decided to withdraw from 2023 Presidential race &#128514;</span>&nbsp;&nbsp;&nbsp;
+            </p>
+        </div>
+
+
+        <script src="../src/script.js"></script>
+    </body>
+</html>
