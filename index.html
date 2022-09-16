@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+        <link rel="stylesheet" href="src/style.css">
+        <link rel="stylesheet" href="src/media.css">
+    </head>
+
+    <body>
+        <div class="subscribe-newsletters">
+            <div class="s-exp">
+                <div class="cancel" onclick="closeSub()">&times; Cancel</div>
+                <div style="text-align:center;font-size:25px;font-weight:600;">Subscribe for free Newsletters</div>
+                <form action="">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" autofocus />
+                    <input type="checkbox" name="remember" id="remember">
+                    <label for="remember">Remember Me</label><br>
+                    <input type="checkbox" name="agree" id="agree">
+                    <label for="agree">I Agree to your Rules & Policies</label><br>
+                    <button>Join List</button>    
+                </form>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <header class="header">
+                <div><i class="fa fa-desktop"></i> Informedia</div>
+            </header>
+
+            <section class="content-container">
+
+                <section class="navigation">
+                    <div class="menu" onclick="closenav()" style="position:absolute;top:5px;right:5px;font-size:40px;font-weight:600;color:red;cursor:pointer;">&times;</div>
+                    <h3>Category</h3>
+                    <nav>
+                        <ul>
+                            <li class="active"><a href="#">Education</a></li>
+                            <li><a href="#">Politics</a></li>
+                            <li><a href="#">Entertainment</a></li>
+                            <li><a href="#">Technology</a></li>
+                            <li><a href="#">Religion</a></li>
+                            <li><a href="#">Business</a></li>
+                            <li><a href="#">Science & Research</a></li>
+                        </ul>
+                    </nav>
+
+                    <section class="settings">
+
+                        <h3>Your Settings <span>&equiv;</span></h3>
+    
+                        <div class="options">
+    
+                            <label for="settings">
+                                Saved Articles <span><i class="fa fa-angle-down"></i> </span>
+                            </label>
+                            <input type="checkbox" id="settings">
+    
+                            <div class="user-saved-articles">
+                                <ul>
+                                    <li>
+                                        <a href="#">17 Medical & Students graduate...</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">17 Medical & Students graduate...</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">17 Medical & Students graduate...</a>
+                                    </li>
+                                </ul>
+                            </div>
+    
+                            <div class="lang-options">
+                                <span></span>
+                                <label for="lang">Language:</label>
+                                <select  id="lang">
+                                    <option value="English">English</option>
+                                    <option value="English">English</option>
+                                    <option value="English">English</option>
+                                    <option value="English">English</option>
+                                    <option value="English">English</option>
+                                    <option value="English">English</option>
+                                    <option value="English">English</option>
+                                    <option value="English">English</option>
+                                </select>
+                            </div>
+    
+                            <div class="text-size-options">
+                                <span></span>
+                                <label for="text">Textsize:</label>
+                                <select  id="text">
+                                    <option value="English">Very Small</option>
+                                    <option value="English">Small</option>
+                                    <option value="English">Large</option>
+                                    <option value="English">X Large</option>
+                                    <option value="English">XX Large</option>
+                                </select>
+                            </div>
+    
+                            <div class="country-options">
+                                <span></span>
+                                <label for="country">Country:</label>
+                                <select  id="country">
+                                    <option value="English">Nigeria</option>
+                                    <option value="English">Ghana</option>
+                                    <option value="English">Togo</option>
+                                    <option value="English">RSA</option>
+                                    <option value="English">Niger</option>
+                                </select>
+                            </div>
+    
+                            <div class="darkmode">
+                                <span></span>
+                                <label for="darkmode">Darkmode</label>
+                                <input type="range"  id="darkmode">
+                            </div>
+    
+                        </div>
+    
+                    </section>
+
+                </section>
+                    
+                <section class="news">
+
+                    <header>
+                        <div class="little-nav">
+                            <ul>
+                                <li class="menu"><a class="menu" onclick="opennav()"><i class="fa fa-list"></i> Menu</a></li>
+                                <li class="active"><a href="#">Latest</a></li>
+                                <li><a href="#">Trending</a></li>
+                                <li><a href="#">International</a></li>
+                            </ul>
+                        </div>
+                    </header>
+
+                    <section class="articles">
+
+                        <figure>
+                            <img src="image/sample.jpg" alt="">
+                            <span class="views">29.6k views</span>
+                            <figcaption>
+                                <a href="#">17 Medicine Students & Surgery Students graduate with 
+                                    first Class from the university of Jos
+                                </a>
+                                <article>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                    Delectus aut pariatur aspernatur eaque exercitationem quae labore...
+                                </article>
+                                <span class="view">29.6k views</span>
+                            </figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="image/sample.jpg" alt="">
+                            <span class="views">29.6k views</span>
+                            <figcaption>
+                                <a href="#">17 Medicine Students & Surgery Students graduate with 
+                                    first Class from the university of Jos
+                                </a>
+                                <article>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                    Delectus aut pariatur aspernatur eaque exercitationem quae labore...
+                                </article>
+                                <span class="view">29.6k views</span>
+                            </figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="image/sample.jpg" alt="">
+                            <span class="views">29.6k views</span>
+                            <figcaption>
+                                <a href="#">17 Medicine Students & Surgery Students graduate with 
+                                    first Class from the university of Jos
+                                </a>
+                                <article>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                    Delectus aut pariatur aspernatur eaque exercitationem quae labore...
+                                </article>
+                                <span class="view">29.6k views</span>
+                            </figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="image/sample.jpg" alt="">
+                            <span class="views">29.6k views</span>
+                            <figcaption>
+                                <a href="#">17 Medicine Students & Surgery Students graduate with 
+                                    first Class from the university of Jos
+                                </a>
+                                <article>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                    Delectus aut pariatur aspernatur eaque exercitationem quae labore...
+                                </article>
+                                <span class="view">29.6k views</span>
+                            </figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="image/sample.jpg" alt="">
+                            <span class="views">29.6k views</span>
+                            <figcaption>
+                                <a href="#">17 Medicine Students & Surgery Students graduate with 
+                                    first Class from the university of Jos
+                                </a>
+                                <article>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                    Delectus aut pariatur aspernatur eaque exercitationem quae labore...
+                                </article>
+                                <span class="view">29.6k views</span>
+                            </figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="image/sample.jpg" alt="">
+                            <span class="views">29.6k views</span>
+                            <figcaption>
+                                <a href="#">17 Medicine Students & Surgery Students graduate with 
+                                    first Class from the university of Jos
+                                </a>
+                                <article>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                    Delectus aut pariatur aspernatur eaque exercitationem quae labore...
+                                </article>
+                                <span class="view">29.6k views</span>
+                            </figcaption>
+                        </figure>
+
+                    </section>
+
+                </section>
+
+
+            </section>
+            
+        </div>
+
+        <div class="subscribe">
+            <button onclick="subscribe()"><i class="fa fa-thumbs-up"></i> Subscribe</button>
+        </div>
+
+
+        <script src="src/script.js"></script>
+    </body>
+</html>
