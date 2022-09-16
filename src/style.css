@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #c8c8c8;
+}
+
+.content-container{
+    display: flex;
+    flex-direction: row;
+    color: #373737;
+    height: 90vh;
+}
+
+.header{
+    background-color: #ececee;
+    padding: .3em 1.7em;
+    height: 10%;
+    color: #0419A2;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,.3);
+}
+
+.navigation ul,ul {
+    list-style: none;
+    padding-left: 0;
+    line-height: 30px;
+    width: fit-content;
+}
+.navigation ul li,li{
+    margin: none;
+    cursor: pointer;
+    padding: none;
+}
+.navigation ul li a,a{
+    color: inherit;
+    text-decoration: none;
+}
+.menu {
+    display: none;
+}
+
+.news header{
+    background-color: rgb(204, 204, 204);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
+}
+.news header ul{
+    border-bottom: 1px solid #808080;
+}
+.news{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: rgba(204, 204, 204,.5);
+}
+.news header .little-nav ul{
+    width: 100%;
+    text-align: center;
+} 
+.news header li{
+    display: inline;
+    margin-left: 3%;
+    color:#373737 ;
+}
+.settings{
+    width: fit-content;
+    height: 93vh;
+    min-width: 200px;
+    position: sticky;
+    top: 0;
+    margin: 3px;
+}
+.settings .options{
+    color: white;
+    
+}
+label{
+    width: fit-content;
+    color: #373737;
+}
+.settings .options label:first-child{
+    background-color: #808080;
+    color: white;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.settings .options label span{
+    float: right;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.user-saved-articles{
+    background-color: #373737;
+    display: none;
+}
+.user-saved-articles li{
+    border-bottom: 1px solid #fff;
+}
+.user-saved-articles a{
+    color: #fff;
+}
+#settings{
+    display: none;
+}
+#settings:checked~.user-saved-articles{
+    display: block;
+}
+.lang-options{
+    margin-top: 10px;
+}
+select {
+    width: 100px;
+    background-color: #373737;
+    opacity: 70%;
+    float: right;
+    color:#fff ;
+}
+
+input[type="range"]{
+    width: 50px;
+    float: right;
+}
+.subscribe{
+    margin: 0 auto;
+    text-align: center;
+    bottom: 35px;
+    right: 10px;
+    position: fixed;
+}
+.subscribe button{
+    background-color: #8a1111;
+    display: block;
+    margin: auto;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #8a1111;
+    z-index: 1;
+}
+.subscribe button:hover{
+    background-color: #811136;
+}
+
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 5px;
+    margin-top: -10px;
+    justify-content: center;
+    background-color: rgba(204, 204, 204,.5);
+    
+}
+.articles figure{
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 0px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    margin-right: 3px;
+    padding: 10px; 
+}
+.articles figure img{
+    width:180px;
+    text-align: center;
+    height: 190px;
+    margin: auto    ;
+    padding: 2px;
+    display: block;
+}
+.articles figure .views{
+    display: block;
+    font-size: small;
+    font-weight: bold;
+    color: red;
+    border-bottom: 1px solid #373737;
+}
+.articles figure .view{
+    display: block;
+    font-size: small;
+    font-weight: bold;
+    color: red;
+    margin-top: 5px;
+}
+.articles figure a{
+    color: #0419A2;
+    font-weight: bold;
+    font-size: small;
+}
+.articles figure article{
+    font-weight: bold;
+    font-size: small;
+}
+
+.subscribe-newsletters input[type="email"]{
+    display: block;
+    padding: 10px;
+    font-size: 15px;
+    background: white;
+    outline: none;
+    border: none;
+    width: 90%;
+    border-radius: 15px;
+    margin: 10px 0;
+}
+.subscribe-newsletters input[type="email"]:focus {
+    border: 2px solid red;
+}
+.subscribe-newsletters{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.subscribe-newsletters .s-exp{
+    background-color: rgba(204, 204, 204);
+    width: 95%;
+    max-width: 400px;
+    padding: 0px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: space-around;
+}
+.subscribe-newsletters .s-exp div.cancel{
+    float: right;
+    clear: both;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    background: grey;
+    text-align: center;
+}
+.subscribe-newsletters .s-exp div {
+    margin-bottom: 20px;
+}
+.subscribe-newsletters .s-exp label{
+    font-size: 15px;
+}
+.subscribe-newsletters .s-exp button{
+    background-color: #8a1111;
+    border: 1px solid #8a1111;
+    color: white;
+    width:70%;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    height: 30px;
+    font-size: large;
+    border-radius: 20px;
+
+}
+.container .header span,.settings h3 span{
+    display: none;
+    text-align: end;
+    float: right;
+}
+
+.content-container  .navigation input{
+    display: none;
+}
+.active {
+    border-bottom: 2px solid black;
+}

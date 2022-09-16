@@ -1,0 +1,118 @@
+@media only screen and (min-width:200px) and (max-width:400px) {
+    .navigation{   
+        width: 0px;
+        height: fit-content;
+        overflow-y: scroll;
+        position: fixed;
+        overflow: hidden;
+        background: #c8c8c8;
+        transition: width .5s;
+        left: 0;
+        top: 0;
+        z-index: 2;
+    }
+    .subscribe button {
+        font-size: 15px;
+    }
+    .menu {
+        display: inline-block;
+    }
+    .articles figure{
+        width:100%;
+    }
+    .articles figure .views {
+        display: none !important;
+    }
+    .articles figure img {
+        display: inline !important;
+        width: 25% !important;
+        height: 80px !important;
+        float: left !important;
+    }
+    .articles figure figcaption {
+        display: inline;
+        float: right !important;
+        width: 70% !important;
+    }
+    .articles figure figcaption article {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width:401px) and (max-width:600px) {
+    .navigation{
+        width: 0px;
+        height: fit-content;
+        overflow-y: scroll;
+        position: fixed;
+        overflow: hidden;
+        background: #c8c8c8;
+        transition: width .5s;
+        left: 0;
+        top: 0;
+        z-index: 2;
+    }
+    .subscribe button {
+        font-size: 20px;
+    }
+    .menu {
+        display: inline-block;
+    }
+    .articles figure{
+        width:calc(100%/3.2);
+        min-width: 190px;
+    }
+    .articles figure .view {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width:601px) and (max-width:768px) {
+    .navigation{
+        padding-left: 1.7em !important;
+        padding-right: 10px;
+        height: 100%;
+        width: 250px !important;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        background: #c8c8c8;
+    }
+    .subscribe button {
+        font-size: 25px;
+    }
+    .menu {
+        display: none;
+    }
+    .articles figure{
+        width:calc(100%/3.2);
+        min-width: 190px;
+    }
+    .articles figure .view {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width:2000px) {
+    .navigation{
+        padding-left: 1.7em !important;
+        padding-right: 10px;
+        height: 100%;
+        width: 300px !important;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        background: #c8c8c8;
+    }
+    .subscribe button {
+        font-size: 30px;
+    }
+    .menu {
+        display: none;
+    }
+    .articles figure{
+        width:calc(100%/3.2);
+        min-width: 190px;
+    }
+    .articles figure .view {
+        display: none !important;
+    }
+}
