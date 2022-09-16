@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blog</title>
+        <title>Informedia Blog</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
         <link rel="stylesheet" href="src/style.css">
         <link rel="stylesheet" href="src/media.css">
@@ -37,90 +37,35 @@
 
                 <section class="navigation">
                     <div class="menu" onclick="closenav()" style="position:absolute;top:5px;right:5px;font-size:40px;font-weight:600;color:red;cursor:pointer;">&times;</div>
-                    <h3>Category</h3>
+                    <h3><i class="fa fa-home"></i> Home</h3>
                     <nav>
                         <ul>
-                            <li class="active"><a href="#">Education</a></li>
-                            <li><a href="#">Politics</a></li>
-                            <li><a href="#">Entertainment</a></li>
-                            <li><a href="#">Technology</a></li>
-                            <li><a href="#">Religion</a></li>
-                            <li><a href="#">Business</a></li>
-                            <li><a href="#">Science & Research</a></li>
+                            <li class="active"><a href="index.html"><i class="fa fa-home"></i> Home Page</a></li>
+                            <li><a href="#"><i class="fa fa-user"></i> My Profile</a></li>
+                        </ul>
+                    </nav>
+                    <h3>News Category</h3>
+                    <nav>
+                        <ul>
+                            <li><a href="pages/education.html">Education</a></li>
+                            <li><a href="pages/politics.html">Politics</a></li>
+                            <li><a href="pages/entertainment.html">Entertainment</a></li>
+                            <li><a href="pages/technology.html">Technology</a></li>
+                            <li><a href="pages/religion.html">Religion</a></li>
+                            <li><a href="pages/business.html">Business</a></li>
+                            <li><a href="pages/science.html">Science & Research</a></li>
+                            <li><a href="pages/sport.html">Sports</a></li>
                         </ul>
                     </nav>
 
-                    <section class="settings">
+                    <section class="settings hide">
 
                         <h3>Your Settings <span>&equiv;</span></h3>
-    
-                        <div class="options">
-    
-                            <label for="settings">
-                                Saved Articles <span><i class="fa fa-angle-down"></i> </span>
-                            </label>
-                            <input type="checkbox" id="settings">
-    
-                            <div class="user-saved-articles">
-                                <ul>
-                                    <li>
-                                        <a href="#">17 Medical & Students graduate...</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">17 Medical & Students graduate...</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">17 Medical & Students graduate...</a>
-                                    </li>
-                                </ul>
-                            </div>
-    
-                            <div class="lang-options">
-                                <span></span>
-                                <label for="lang">Language:</label>
-                                <select  id="lang">
-                                    <option value="English">English</option>
-                                    <option value="English">English</option>
-                                    <option value="English">English</option>
-                                    <option value="English">English</option>
-                                    <option value="English">English</option>
-                                    <option value="English">English</option>
-                                    <option value="English">English</option>
-                                    <option value="English">English</option>
-                                </select>
-                            </div>
-    
-                            <div class="text-size-options">
-                                <span></span>
-                                <label for="text">Textsize:</label>
-                                <select  id="text">
-                                    <option value="English">Very Small</option>
-                                    <option value="English">Small</option>
-                                    <option value="English">Large</option>
-                                    <option value="English">X Large</option>
-                                    <option value="English">XX Large</option>
-                                </select>
-                            </div>
-    
-                            <div class="country-options">
-                                <span></span>
-                                <label for="country">Country:</label>
-                                <select  id="country">
-                                    <option value="English">Nigeria</option>
-                                    <option value="English">Ghana</option>
-                                    <option value="English">Togo</option>
-                                    <option value="English">RSA</option>
-                                    <option value="English">Niger</option>
-                                </select>
-                            </div>
-    
-                            <div class="darkmode">
-                                <span></span>
-                                <label for="darkmode">Darkmode</label>
-                                <input type="range"  id="darkmode">
-                            </div>
-    
-                        </div>
+                        <nav>
+                            <ul>
+                                <li><a href="#">Education</a></li>
+                            </ul>
+                        </nav>
     
                     </section>
 
@@ -128,22 +73,12 @@
                     
                 <section class="news">
 
-                    <header>
-                        <div class="little-nav">
-                            <ul>
-                                <li class="menu"><a class="menu" onclick="opennav()"><i class="fa fa-list"></i> Menu</a></li>
-                                <li class="active"><a href="#">Latest</a></li>
-                                <li><a href="#">Trending</a></li>
-                                <li><a href="#">International</a></li>
-                            </ul>
-                        </div>
-                    </header>
-
                     <section class="articles">
 
-                        <figure>
-                            <img src="image/sample.jpg" alt="">
-                            <span class="views">29.6k views</span>
+                        <figure class="local all">
+
+                            <img src="image/ai1.jpeg" alt="cover">
+                            <span class="views"><i class="fa fa-eye"></i> 29.6k views</span>
                             <figcaption>
                                 <a href="#">17 Medicine Students & Surgery Students graduate with 
                                     first Class from the university of Jos
@@ -152,13 +87,16 @@
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                                     Delectus aut pariatur aspernatur eaque exercitationem quae labore...
                                 </article>
-                                <span class="view">29.6k views</span>
+                                <span class="view"><i class="fa fa-eye"></i> 29.6k views</span>
                             </figcaption>
+
                         </figure>
 
-                        <figure>
-                            <img src="image/sample.jpg" alt="">
-                            <span class="views">29.6k views</span>
+
+                        <figure class="local all">
+
+                            <img src="image/b21.jpg" alt="cover">
+                            <span class="views"><i class="fa fa-eye"></i> 29.6k views</span>
                             <figcaption>
                                 <a href="#">17 Medicine Students & Surgery Students graduate with 
                                     first Class from the university of Jos
@@ -167,13 +105,16 @@
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                                     Delectus aut pariatur aspernatur eaque exercitationem quae labore...
                                 </article>
-                                <span class="view">29.6k views</span>
+                                <span class="view"><i class="fa fa-eye"></i> 29.6k views</span>
                             </figcaption>
+
                         </figure>
 
-                        <figure>
-                            <img src="image/sample.jpg" alt="">
-                            <span class="views">29.6k views</span>
+
+                        <figure class="local all">
+
+                            <img src="image/mu.jpeg" alt="cover">
+                            <span class="views"><i class="fa fa-eye"></i> 29.6k views</span>
                             <figcaption>
                                 <a href="#">17 Medicine Students & Surgery Students graduate with 
                                     first Class from the university of Jos
@@ -182,13 +123,16 @@
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                                     Delectus aut pariatur aspernatur eaque exercitationem quae labore...
                                 </article>
-                                <span class="view">29.6k views</span>
+                                <span class="view"><i class="fa fa-eye"></i> 29.6k views</span>
                             </figcaption>
+
                         </figure>
 
-                        <figure>
-                            <img src="image/sample.jpg" alt="">
-                            <span class="views">29.6k views</span>
+
+                        <figure class="local all">
+
+                            <img src="image/image1.jpg" alt="cover">
+                            <span class="views"><i class="fa fa-eye"></i> 29.6k views</span>
                             <figcaption>
                                 <a href="#">17 Medicine Students & Surgery Students graduate with 
                                     first Class from the university of Jos
@@ -197,28 +141,16 @@
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                                     Delectus aut pariatur aspernatur eaque exercitationem quae labore...
                                 </article>
-                                <span class="view">29.6k views</span>
+                                <span class="view"><i class="fa fa-eye"></i> 29.6k views</span>
                             </figcaption>
+
                         </figure>
 
-                        <figure>
-                            <img src="image/sample.jpg" alt="">
-                            <span class="views">29.6k views</span>
-                            <figcaption>
-                                <a href="#">17 Medicine Students & Surgery Students graduate with 
-                                    first Class from the university of Jos
-                                </a>
-                                <article>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                    Delectus aut pariatur aspernatur eaque exercitationem quae labore...
-                                </article>
-                                <span class="view">29.6k views</span>
-                            </figcaption>
-                        </figure>
 
-                        <figure>
-                            <img src="image/sample.jpg" alt="">
-                            <span class="views">29.6k views</span>
+                        <figure class="local all">
+
+                            <img src="image/key.jpeg" alt="cover">
+                            <span class="views"><i class="fa fa-eye"></i> 29.6k views</span>
                             <figcaption>
                                 <a href="#">17 Medicine Students & Surgery Students graduate with 
                                     first Class from the university of Jos
@@ -227,13 +159,14 @@
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                                     Delectus aut pariatur aspernatur eaque exercitationem quae labore...
                                 </article>
-                                <span class="view">29.6k views</span>
+                                <span class="view"><i class="fa fa-eye"></i> 29.6k views</span>
                             </figcaption>
+
                         </figure>
 
                     </section>
 
-                </section>
+                </section> 
 
 
             </section>
@@ -242,6 +175,14 @@
 
         <div class="subscribe">
             <button onclick="subscribe()"><i class="fa fa-thumbs-up"></i> Subscribe</button>
+        </div>
+
+        <div class="update">
+            <p class="text-wrap">
+                <span>This is a news update that should be right here at the bottom of the page. There can be be some footer news update that gives a general overview at one glance.</span>&nbsp;&nbsp;&nbsp;
+                <span>ASUU don finally decide to extend strike till next year &#128520;</span>&nbsp;&nbsp;&nbsp;
+                <span>APC & PDP have decided to withdraw from 2023 Presidential race &#128514;</span>&nbsp;&nbsp;&nbsp;
+            </p>
         </div>
 
 

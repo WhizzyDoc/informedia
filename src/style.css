@@ -5,45 +5,54 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #c8c8c8;
+    background-color: #fff;
 }
 
 .content-container{
     display: flex;
     flex-direction: row;
     color: #373737;
-    height: 90vh;
+    height: 90vh; 
 }
 
 .header{
-    background-color: #ececee;
+    background-color: navy;
     padding: .3em 1.7em;
     height: 10%;
-    color: #0419A2;
+    color: white;
     box-shadow: 1px 1px 1px 1px rgba(0,0,0,.3);
 }
 
-.navigation ul,ul {
+.navigation {
+    background: lightblue;
+    color: blue;
+}
+.navigation h3 {
+    color: navy;
+}
+
+.navigation ul,ul, .settings ul {
     list-style: none;
     padding-left: 0;
     line-height: 30px;
     width: fit-content;
 }
-.navigation ul li,li{
+.navigation ul li,li, .settings ul li{
     margin: none;
     cursor: pointer;
     padding: none;
 }
-.navigation ul li a,a{
+.navigation ul li a,a, .settings ul li a{
     color: inherit;
     text-decoration: none;
+    font-weight: 500;
 }
 .menu {
     display: none;
 }
 
 .news header{
-    background-color: rgb(204, 204, 204);
+    background-color: blue;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
@@ -57,7 +66,7 @@ body{
     height: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
-    background-color: rgba(204, 204, 204,.5);
+    background-color: navy;
 }
 .news header .little-nav ul{
     width: 100%;
@@ -65,75 +74,23 @@ body{
 } 
 .news header li{
     display: inline;
-    margin-left: 3%;
-    color:#373737 ;
+    margin-left: 5px;
+    color:white;
+    font-weight: 600;
 }
 .settings{
     width: fit-content;
-    height: 93vh;
     min-width: 200px;
     position: sticky;
     top: 0;
     margin: 3px;
 }
-.settings .options{
-    color: white;
-    
-}
-label{
-    width: fit-content;
-    color: #373737;
-}
-.settings .options label:first-child{
-    background-color: #808080;
-    color: white;
-    width: 100%;
-    display: block;
-    cursor: pointer;
-}
 
-.settings .options label span{
-    float: right;
-    color: #fff;
-    font-weight: bolder;
-}
-
-.user-saved-articles{
-    background-color: #373737;
-    display: none;
-}
-.user-saved-articles li{
-    border-bottom: 1px solid #fff;
-}
-.user-saved-articles a{
-    color: #fff;
-}
-#settings{
-    display: none;
-}
-#settings:checked~.user-saved-articles{
-    display: block;
-}
-.lang-options{
-    margin-top: 10px;
-}
-select {
-    width: 100px;
-    background-color: #373737;
-    opacity: 70%;
-    float: right;
-    color:#fff ;
-}
-
-input[type="range"]{
-    width: 50px;
-    float: right;
-}
 .subscribe{
     margin: 0 auto;
     text-align: center;
-    bottom: 35px;
-    right: 10px;
+    bottom: 42px;
+    right: 25px;
     position: fixed;
 }
 .subscribe button{
@@ -149,17 +106,18 @@ input[type="range"]{
     z-index: 1;
 }
 .subscribe button:hover{
-    background-color: #811136;
+    background-color: red;
 }
 
 .articles{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    width: 100%;
     margin: 5px;
     margin-top: -10px;
-    justify-content: center;
-    background-color: rgba(204, 204, 204,.5);
+    justify-content: flex-start;
+    background-color: rgba(255, 255, 255, 0.2);
     
 }
 .articles figure{
@@ -171,35 +129,45 @@ input[type="range"]{
     padding: 10px; 
 }
 .articles figure img{
-    width:180px;
+    width:95%;
     text-align: center;
     height: 190px;
     margin: auto    ;
     padding: 2px;
     display: block;
 }
-.articles figure .views{
-    display: block;
+.articles figure .views, .articles figure .view {
+    display: inline-block;
     font-size: small;
     font-weight: bold;
     color: red;
-    border-bottom: 1px solid #373737;
-}
-.articles figure .view{
-    display: block;
-    font-size: small;
-    font-weight: bold;
-    color: red;
+    background: white;
     margin-top: 5px;
+    padding: 3px 7px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.articles figure .stars, .articles figure .star {
+    display: inline-block;
+    font-size: small;
+    font-weight: bold;
+    color: red;
+    background: white;
+    margin-top: 5px;
+    padding: 3px 7px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 .articles figure a{
-    color: #0419A2;
+    color: yellow;
     font-weight: bold;
     font-size: small;
 }
 .articles figure article{
-    font-weight: bold;
+    font-weight: 300;
     font-size: small;
+    color: white;
+    margin-top: 8px;
 }
 
 .subscribe-newsletters input[type="email"]{
@@ -275,5 +243,36 @@ input[type="range"]{
     display: none;
 }
 .active {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
+}
+.update {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 38px;
+    background: black;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.text-wrap {
+    display: block ;
+    white-space:nowrap ;
+    width: fit-content ;
+    animation: text-wrap 20s linear infinite ;
+    position: relative;
+}
+
+@keyframes text-wrap {
+    0% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.hide {
+    display: none;
 }

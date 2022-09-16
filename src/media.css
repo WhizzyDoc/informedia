@@ -5,7 +5,6 @@
         overflow-y: scroll;
         position: fixed;
         overflow: hidden;
-        background: #c8c8c8;
         transition: width .5s;
         left: 0;
         top: 0;
@@ -20,7 +19,7 @@
     .articles figure{
         width:100%;
     }
-    .articles figure .views {
+    .articles figure .views, .articles figure .stars {
         display: none !important;
     }
     .articles figure img {
@@ -46,7 +45,6 @@
         overflow-y: scroll;
         position: fixed;
         overflow: hidden;
-        background: #c8c8c8;
         transition: width .5s;
         left: 0;
         top: 0;
@@ -59,10 +57,9 @@
         display: inline-block;
     }
     .articles figure{
-        width:calc(100%/3.2);
-        min-width: 190px;
+        width: 49%;
     }
-    .articles figure .view {
+    .articles figure .view, .articles figure .star {
         display: none !important;
     }
 }
@@ -75,7 +72,6 @@
         width: 250px !important;
         overflow-y: scroll;
         overflow-x: hidden;
-        background: #c8c8c8;
     }
     .subscribe button {
         font-size: 25px;
@@ -83,12 +79,20 @@
     .menu {
         display: none;
     }
-    .articles figure{
-        width:calc(100%/3.2);
-        min-width: 190px;
-    }
-    .articles figure .view {
+    .articles figure .view, .articles figure .star {
         display: none !important;
+    }
+}
+
+@media only screen and (min-width:601px) and (max-width:1140px) {
+    .articles figure{
+        width: 49%;
+    }
+}
+
+@media only screen and (min-width:1140px) and (max-width:2000px) {
+    .articles figure{
+        width: 33%;
     }
 }
 
@@ -100,7 +104,6 @@
         width: 300px !important;
         overflow-y: scroll;
         overflow-x: hidden;
-        background: #c8c8c8;
     }
     .subscribe button {
         font-size: 30px;
@@ -108,11 +111,7 @@
     .menu {
         display: none;
     }
-    .articles figure{
-        width:calc(100%/3.2);
-        min-width: 190px;
-    }
-    .articles figure .view {
+    .articles figure .view, .articles figure .star {
         display: none !important;
     }
 }
